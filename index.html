@@ -1,11 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aerolux</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aerolux</title>
+
+<style>
+:root {
+  --gold: #C8A442;
+  --gold-soft: #C9B06B;
+  --black: #000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: var(--gold-soft);
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
+
+.hero h1 {
+  color: var(--gold);
+  font-size: 52px;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin: 0 0 20px;
+}
+
+.hero a {
+  background: var(--gold);
+  color: #000;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  width: 1400px;
+  height: 2px;
+  background: var(--gold);
+  margin: 80px auto;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.service-box {
+  height: 200px;
+  border: 1px solid #3A2E12;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 14px;
+}
+
+.service-box span {
+  background: var(--gold);
+  color: #000;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ===== SIGNATURE ===== */
+.signature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.signature img {
+  width: 100%;
+}
+
+.signature h2 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.signature a {
+  display: inline-block;
+  margin-top: 15px;
+  background: var(--gold);
+  color: #000;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+/* ===== GALLERY ===== */
+.gallery-title {
+  text-align: center;
+  color: var(--gold);
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+/* ===== SHOW MORE ===== */
+.show-more {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.show-more a {
+  background: var(--gold);
+  color: #000;
+  padding: 10px 24px;
+  text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-links {
+  max-width: 1400px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links strong {
+  color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: block;
+  color: var(--gold-soft);
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.follow {
+  color: var(--gold);
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.copy {
+  font-size: 12px;
+  color: #8F824C;
+  margin-top: 20px;
+}
+</style>
 </head>
-<body style="background:black; color:white; font-family:Arial;">
-  <h1>Aerolux Website</h1>
-  <p>GitHub Pages is now working.</p>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>AEROLUX</h1>
+  <p>Private Aviation. Elevated.</p>
+  <a href="booking.html">Book Now</a>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="service-box"><span>Fleet</span></div>
+  <div class="service-box"><span>Private Charter</span></div>
+  <div class="service-box"><span>Individual</span></div>
+  <div class="service-box"><span>Jet Cleaning</span></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SIGNATURE -->
+<section class="signature">
+  <img src="images/signature.jpg" alt="Aerolux Atelier">
+  <div>
+    <h2>AEROLUX SIGNATURE SERVICE</h2>
+    <p>
+      Our bespoke aviation services are tailored to your exact expectations.
+      Whether you require private charters, individual services, or custom
+      travel arrangements, the Aerolux concierge is ready to assist you at every
+      stage of your journey.
+    </p>
+    <a href="individual.html">Discover</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- GALLERY -->
+<h2 class="gallery-title">GALLERY</h2>
+
+<section class="gallery">
+  <img src="images/gallery1.jpg" alt="">
+  <img src="images/gallery2.jpg" alt="">
+  <img src="images/gallery3.jpg" alt="">
+  <img src="images/gallery4.jpg" alt="">
+  <img src="images/gallery5.jpg" alt="">
+  <img src="images/gallery6.jpg" alt="">
+  <img src="images/gallery7.jpg" alt="">
+  <img src="images/gallery8.jpg" alt="">
+</section>
+
+<div class="show-more">
+  <a href="gallery.html">Show More</a>
+</div>
+
+<div class="divider"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <div>
+      <strong>Quick Links</strong>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html">Book a Flight</a>
+    </div>
+    <div>
+      <strong>Company</strong>
+      <a href="about.html">About Us</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="individual.html">Services</a>
+    </div>
+  </div>
+
+  <div class="follow">FOLLOW AEROLUX</div>
+  <p>Follow us for updates and exclusive prices.</p>
+  <div class="copy">© 2026 Aerolux Private Jets. All rights reserved.</div>
+</footer>
+
 </body>
 </html>
